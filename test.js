@@ -88,3 +88,27 @@ console.log(a);
 };
 
 foo4();
+
+ for (var i = 0; i < 3; i++) { setTimeout(function log() { console.log(i); // What is logged? 
+ }, 1000); }
+
+
+console.log(0.1+0.2 === 0.3) 
+
+let number = 0; console.log(number++); console.log(++number); console.log(number);
+
+var text = "foo bar loo zoo moo";
+text = text.toLowerCase()
+    .split(' ')
+    .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+    .join(' ');
+    console.log(text)
+
+find sum of all numbers-
+let obj = {e:2,
+           r:3,
+           et:'2',
+            aet:{as: '2',
+               sd: 3},
+           rtt: [1,2, 3,]
+          };
