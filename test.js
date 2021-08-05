@@ -112,3 +112,26 @@ let obj = {e:2,
                sd: 3},
            rtt: [1,2, 3,]
           };
+
+
+print b empty array?
+let arr = [1,2,3,4,5];
+let b = arr;
+first way -
+arr.length = []
+second way-
+arr.pop()
+arr.pop()
+arr.pop()
+arr.pop()
+arr.pop()
+// b? //
+console.log(b)
+
+third way-
+arr.splice(0)
+
+
+sum(3, 4, 5) => using es6 functions
+
+sum(1)(2)(3)
