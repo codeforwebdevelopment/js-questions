@@ -180,4 +180,16 @@ output-
 5
 
 --------------
+   <div>
+        <ul>
+        <li>hey</li>
+        <li>there</li>
+        </ul>
+        <ul>
+        <li>world</li>
+        </ul>
+        </div>
 
+      console.log(document.querySelectorAll('ul li'));
+
++++++++++++++++++++
