@@ -31,7 +31,12 @@ console.log(new student(50,"John Wick").id);
 var obj = { hasownProperty: 1, foo: 2 };
 
 console.log(obj.hasOwnProperty('foo'));
-
+------------------------------------
+  let foo = ( a = 3, b = 5 ) => {
+console.log( a + b );
+}
+foo()
+----------
 
 var power = "100";
 function getPowerNumber()
@@ -135,3 +140,44 @@ arr.splice(0)
 sum(3, 4, 5) => using es6 functions
 
 sum(1)(2)(3)
+------------------------------------
+let p1 = new Promise((resolve, reject) => {
+resolve("foo");
+});
+let p2 = new Promise((resolve, reject) => {
+reject("bar");
+});
+console.log("bip");
+p1.then(val => {
+console.log(val);
+return p2;
+})
+.then(val => {
+console.log("baz");
+})
+.catch(err => {
+console.log(err);
+});
+console.log("bop");
+
+output-
+bip
+bop
+foo
+bar
+----------------
+ for (var i = 0; i < 5; i++) {
+setTimeout(function () {
+console.log(i);
+},100);
+}
+
+output-
+5
+5
+5
+5
+5
+
+--------------
+
