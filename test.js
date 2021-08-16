@@ -193,3 +193,30 @@ output-
       console.log(document.querySelectorAll('ul li'));
 
 +++++++++++++++++++
+ value of k?
+let i 3;
+let j = 4;
+let k 1;
+for (i = 0; i < 3; i++) {
+k += j;
+j = j - 1;
+}
+
+value of a?
+function foo(obj) {
+return {
+a: obj.bar,
+b: obj.baz
+}}
+const { a } =
+foo({ bar: 27, baz: 41 })
+
+const a = (function() {
+return parseInt("1.5");
+})()
+What is the data type of a?
+Select the best option:
+function
+object
+number
+string
