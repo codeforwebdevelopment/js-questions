@@ -220,3 +220,56 @@ function
 object
 number
 string
+
+---------------------
+ 
+class User {
+
+    username = '';
+    tags = [];
+    followers = [];
+    //  @param {string} username
+    // @param {Array.<string>} tags
+    
+    constructor(username, tags) {
+    this.username = username;
+    this.tags = tags;
+    this.followers = [];
+    }
+    /**
+    * @param {User} user
+    @returns void
+    ***/
+    addFollower(user) {
+    this. followers.push(user);
+    }
+    /**
+    * Get the followers who are tagged with tag
+    @param {string} tag
+    * @returns {Array.<User>}
+    */
+    getFollowers (tag) {
+    // Fill in this line
+    // return this.followers.filter(
+    // (follower) => follower.tags.includes (tag));
+
+    // return this. followers.includes (
+    //     (follower) => follower.tags.filter(tag)
+    //     );
+
+//     return this.followers.filter(
+// (follower) =>
+// follower.tags.filter((followerTag) => tag ===
+// followerTag
+// ).length > 0
+// );
+
+return this.followers.map(
+(follower) => follower.tags.includes(tag)
+);
+    }
+    }
+
+    let ibj = new User('a', ['1', '2', '3', '4', '5']);
+    ibj.addFollower('b')
+    console.log(ibj.getFollowers('2'));
