@@ -349,3 +349,65 @@ write a http service method where i can call N number of requestes with the same
 Need a textarea box with a random text
 when i clicked on button need to copy of that text in side the text area and paste it out in another div
 if i changed the text in text area and again if i clicked on button need to update the text in side div
+
+-------------
+
+class Number2{
+    a;
+    b;
+    c;
+    constructor(a, b, c) {
+    this.a = a;
+    this.b = b;
+    this.c = c;
+    }
+    
+    compare(){
+    
+    console.log(this.a<this.b<this.c);
+    
+    console.log(this.c>this.b>this.a);
+    
+    }
+
+    arsf (){
+      
+
+
+    }
+    
+    }
+    
+    const j1 = new Number2(5,6,7);
+    j1.compare();
+-------------
+
+
+let person = {
+    name:"Emily",
+    age:20,
+    };
+    // Object.freeze(person)
+    // Object.seal(person)
+    Object.defineProp(person, "job",{
+
+        value:3,
+        
+        writable: false
+        
+        });
+    [person.name] = "Jack";
+    person.job = "Developer";
+    console.log(person);
+-------------
+    function sum(a, b, c) {
+        if (!isNaN(a) || !isNaN(b) || !isNaN(c)) {
+            throw('Not a number')
+        }else{
+        return a+b+c
+        }
+        }
+        sum(12,"12","14");
+
+
+    
