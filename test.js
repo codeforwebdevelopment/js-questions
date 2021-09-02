@@ -409,5 +409,13 @@ let person = {
         }
         sum(12,"12","14");
 
-
+---------------------
+	Lexical scope
+Difference between const, let and var.
+what isNaN function does?
+What is closure 
+Scope in JavaScript
+Hoisting in js
+Ecma6
+== & ===
     
