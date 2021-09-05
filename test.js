@@ -419,3 +419,23 @@ Hoisting in js
 Ecma6
 == & ===
     
+-----------------------
+DOM Traversal, Manipulation & Creating Elements
+
+Q1-
+HTML Element
+h2 
+p - text
+p- text
+h2 
+
+find all the text of all p element between two h2 elements. 
+
+Q2.
+text
+text
+text
+
+Add the HTML element to each text like p, h1 etc
+
+---------------------
