@@ -418,7 +418,34 @@ Scope in JavaScript
 Hoisting in js
 Ecma6
 == & ===
-    
+ Difference between let, var and const
+What is context in JS?
+Difference between map, reduce and filter
+Difference between class and function
+Normal Function vs Arrow function
+Difference between async and defer
+Difference between == and ===
+Difference between setTimeout and setInterval
+What are the different DOM API’s
+DOM vs Virtual DOM
+How Event loop works
+What is event delegation
+Difference between call, bind and apply
+Explain Promise
+Throttling vs Debouncing
+What is Closure and why should we use closure
+What are the different internal storage and its differences
+What is variable hoisting
+Difference between document.ready(){} and window.onload(){}
+What is async, preload, prefetch in script
+Callback vs Promise
+Explain Currying
+Questions related to flatten array
+Call by value vs Call by reference
+Prototypal inheritance
+How do you optimise page performance
+Write polyfill for Filter, Reduce, Promise
+   
 -----------------------
 DOM Traversal, Manipulation & Creating Elements
 
