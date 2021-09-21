@@ -446,6 +446,7 @@ Prototypal inheritance
 How do you optimise page performance
 Write polyfill for Filter, Reduce, Promise
    
+write your own reduce , filter method
 -----------------------
 DOM Traversal, Manipulation & Creating Elements
 
