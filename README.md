@@ -7,51 +7,7 @@ console.log(Boolean('false')=== Boolean(false))
 console.log(null == undefined)
 console.log(null === undefined)
 
-
-const obj1 = {
-a: 5,
-b: {
-c:6
-}
-}
-const obj2 = Object.assign({}, obj1);
-const obj3 = {...obj1};
-obj1.b.c = 8;
-console.log(Object.assign({},obj1, obj2,obj3));
- 
- 
-var foo = function() {
-var args = Array.prototype.slice.call(arguments);
-console.log(args[1]);
-}
-console.log(foo(1, 2, 4))
   
-let foo = ( a = 3, b = 5 ) => {
-console.log( a
-+ b );
-}
-console.log(foo(6), foo( 7, 4))
- 
-  
-function foo3() {
-console.log(a);
-var a = 5;
-console.log(a);
-};
-foo3();
-
-let foo4 = function() {
-console.log(a);
-var a = 5;
-console.log(a);
-};
-
-foo4();
-
- for (var i = 0; i < 3; i++) { setTimeout(function log() { console.log(i); // What is logged? 
- }, 1000); }
-
-
 console.log(0.1+0.2 === 0.3) 
 
 let number = 0; console.log(number++); console.log(++number); console.log(number);
@@ -72,68 +28,6 @@ let obj = {e:2,
            rtt: [1,2, 3,]
           };
 
-
-print b empty array?
-let arr = [1,2,3,4,5];
-let b = arr;
-first way -
-arr.length = []
-second way-
-arr.pop()
-arr.pop()
-arr.pop()
-arr.pop()
-arr.pop()
-// b? //
-console.log(b)
-
-third way-
-arr.splice(0)
-
-
-sum(3, 4, 5) => using es6 functions
-
-sum(1)(2)(3)
-------------------------------------
-let p1 = new Promise((resolve, reject) => {
-resolve("foo");
-});
-let p2 = new Promise((resolve, reject) => {
-reject("bar");
-});
-console.log("bip");
-p1.then(val => {
-console.log(val);
-return p2;
-})
-.then(val => {
-console.log("baz");
-})
-.catch(err => {
-console.log(err);
-});
-console.log("bop");
-
-output-
-bip
-bop
-foo
-bar
-----------------
- for (var i = 0; i < 5; i++) {
-setTimeout(function () {
-console.log(i);
-},100);
-}
-
-output-
-5
-5
-5
-5
-5
-
---------------
    <div>
         <ul>
         <li>hey</li>
@@ -146,37 +40,11 @@ output-
 
       console.log(document.querySelectorAll('ul li'));
 
-+++++++++++++++++++
- value of k?
-let i 3;
-let j = 4;
-let k 1;
-for (i = 0; i < 3; i++) {
-k += j;
-j = j - 1;
-}
 
-value of a?
-function foo(obj) {
-return {
-a: obj.bar,
-b: obj.baz
-}}
-const { a } =
-foo({ bar: 27, baz: 41 })
 
-const a = (function() {
-return parseInt("1.5");
-})()
-What is the data type of a?
-Select the best option:
-function
-object
-number
-string
 
----------------------
- 
+
+
 class User {
 
     username = '';
@@ -364,7 +232,7 @@ let person = {
         sum(12,"12","14");
 
 ---------------------
-	Lexical scope
+Lexical scope
 Difference between const, let and var.
 what isNaN function does?
 What is closure 
