@@ -42,62 +42,6 @@ let obj = {e:2,
 
 
 
-
-
-
-class User {
-
-    username = '';
-    tags = [];
-    followers = [];
-    //  @param {string} username
-    // @param {Array.<string>} tags
-    
-    constructor(username, tags) {
-    this.username = username;
-    this.tags = tags;
-    this.followers = [];
-    }
-    /**
-    * @param {User} user
-    @returns void
-    ***/
-    addFollower(user) {
-    this. followers.push(user);
-    }
-    /**
-    * Get the followers who are tagged with tag
-    @param {string} tag
-    * @returns {Array.<User>}
-    */
-    getFollowers (tag) {
-    // Fill in this line
-    // return this.followers.filter(
-    // (follower) => follower.tags.includes (tag));
-
-    // return this. followers.includes (
-    //     (follower) => follower.tags.filter(tag)
-    //     );
-
-//     return this.followers.filter(
-// (follower) =>
-// follower.tags.filter((followerTag) => tag ===
-// followerTag
-// ).length > 0
-// );
-
-return this.followers.map(
-(follower) => follower.tags.includes(tag)
-);
-    }
-    }
-
-    let ibj = new User('a', ['1', '2', '3', '4', '5']);
-    ibj.addFollower('b')
-    console.log(ibj.getFollowers('2'));
-
-
--------------------------
  
  
 Q.1.
@@ -172,56 +116,6 @@ Need a textarea box with a random text
 when i clicked on button need to copy of that text in side the text area and paste it out in another div
 if i changed the text in text area and again if i clicked on button need to update the text in side div
 
--------------
-
-class Number2{
-    a;
-    b;
-    c;
-    constructor(a, b, c) {
-    this.a = a;
-    this.b = b;
-    this.c = c;
-    }
-    
-    compare(){
-    
-    console.log(this.a<this.b<this.c);
-    
-    console.log(this.c>this.b>this.a);
-    
-    }
-
-    arsf (){
-      
-
-
-    }
-    
-    }
-    
-    const j1 = new Number2(5,6,7);
-    j1.compare();
--------------
-
-
-let person = {
-    name:"Emily",
-    age:20,
-    };
-    // Object.freeze(person)
-    // Object.seal(person)
-    Object.defineProp(person, "job",{
-
-        value:3,
-        
-        writable: false
-        
-        });
-    [person.name] = "Jack";
-    person.job = "Developer";
-    console.log(person);
--------------
     function sum(a, b, c) {
         if (!isNaN(a) || !isNaN(b) || !isNaN(c)) {
             throw('Not a number')
@@ -267,7 +161,6 @@ Call by value vs Call by reference
 Prototypal inheritance
 How do you optimise page performance
 Write polyfill for Filter, Reduce, Promise
-   
 write your own reduce , filter method
 -----------------------
 DOM Traversal, Manipulation & Creating Elements
