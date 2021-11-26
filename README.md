@@ -182,4 +182,20 @@ text
 Add the HTML element to each text like p, h1 etc
 
 ---------------------
-
+ core principles: (JS fundamentals)
+Functions are first-class citizens in JavaScript
+bind(), apply(), and call()
+Scopes and Closures
+this
+Objects (e.g. Object.keys(myObj).map(key => myMap[key]))
+Arrays (e.g. [1, 2].reduce((sum, summand) => sum + summand, 0))
+Prototypical Inheritance -> ES6 Class
+Callbacks and Promises
+Event Loop
+Event Bubbling
+Regular Expressions
+Error handling (promise.then(...).catch(...), try { } catch(e) { })
+JavaScript ES6 and beyond
+Hoisting, Memoization
+Declarative vs imperative programming
+Functional vs object-oriented programming
