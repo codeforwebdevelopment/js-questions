@@ -182,6 +182,7 @@ text
 Add the HTML element to each text like p, h1 etc
 
 ---------------------
+<pre>
  core principles: (JS fundamentals)
 Functions are first-class citizens in JavaScript
 bind(), apply(), and call()
@@ -199,3 +200,4 @@ JavaScript ES6 and beyond
 Hoisting, Memoization
 Declarative vs imperative programming
 Functional vs object-oriented programming
+</pre>
