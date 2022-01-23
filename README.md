@@ -125,7 +125,8 @@ if i changed the text in text area and again if i clicked on button need to upda
         }
         sum(12,"12","14");
 
----------------------
+
+
 Lexical scope
 Difference between const, let and var.
 what isNaN function does?
@@ -162,7 +163,8 @@ Prototypal inheritance
 How do you optimise page performance
 Write polyfill for Filter, Reduce, Promise
 write your own reduce , filter method
------------------------
+
+
 DOM Traversal, Manipulation & Creating Elements
 
 Q1-
