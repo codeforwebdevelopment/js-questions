@@ -203,3 +203,16 @@ Hoisting, Memoization
 Declarative vs imperative programming
 Functional vs object-oriented programming
 </pre>
+convert the list into comma-separated text.
+
+Input-
+
+a
+
+b
+
+c
+
+Output-
+
+a, b, c
