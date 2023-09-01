@@ -216,3 +216,41 @@ c
 Output-
 
 a, b, c
+
+
+```
+Inheritance vs composition  
+Inheritance types- Single, Multi-level, Multiple
+composition types- object, function, class
+scope - Function
+Functions - Factory , Generator, pure and Non-pure
+objects
+hashmap
+shallow and deep copy
+polyfills
+closure
+recursive problems - flatten object
+event loop - how heap works  -> event loop handles the recursion, not the call stack
+main thread and secondary thred
+critical rendering path - browser app load
+caching - server
+cors and proxy
+temporal dead zone
+global, local, lexical
+hoisting
+v8 and libuv
+IIFEs
+this keyword
+ES6 features - WeakMap, set, WeakSet
+Babel
+solid principle
+Four principles of OOP-Encapsulation, Abstraction, Inheritance, Polymorphism
+Rest vs spread
+Apply, Call, and Bind Methods JS 
+context
+Prototype
+defer and async
+Event Bubbling and Capturing
+ Static method
+ Method decorators
+```
