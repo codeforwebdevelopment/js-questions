@@ -1,5 +1,9 @@
 # javascript interview questions
 
+transpilatioin and compilation
+unknown in ts
+generics
+
 console.log(5 % 1, 5 % 2);
 
 console.log(Boolean('false')=== Boolean(false)) 
