@@ -11,10 +11,20 @@ console.log(shape.perimeter()); // NaN
 
 // for(let k1=0; k1<5; k1++) {} console.log(k1); 
 
- function func() { console.log("User1") } function func() { console.log("User2") } function func() { console.log("User3") } function func() { console.log("User4") } func(); 
- const fnc=(function(a) { delete a; return a; })(7); 
+ function func() { console.log("User1") } 
+ function func() { console.log("User2") } 
+ function func() { console.log("User3") } 
+ function func() { console.log("User4") } 
+ func(); 
+
+ const fnc=(function(a) { 
+  delete a; 
+  return a;
+ })(7); 
  console.log(fnc) 
- for (var i = 0; i < 3; i++) { setTimeout(() => console.log(i), 1);
+
+ for (var i = 0; i < 3; i++) { 
+  setTimeout(() => console.log(i), 1);
 }
 
 var a=5 , b=1
