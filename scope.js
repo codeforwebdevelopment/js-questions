@@ -70,3 +70,14 @@ print(args, 'init')
 
 const track = analytics();
 track("Question Clicked");
+
+function mysteryFunction() {
+  console.log(x); // Step 1
+  var x = 20;
+  console.log(x); // Step 2
+}
+
+x = 10;
+mysteryFunction();
+console.log(x); // Step 3
+

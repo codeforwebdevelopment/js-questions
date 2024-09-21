@@ -60,6 +60,7 @@
 - polyfills
 - recursive problems - flatten object
 - event loop - how heap works  -> event loop handles the recursion, not the call stack
+- Call Stack, Memory Heap, Event Queue, and Event Loop
 - main thread and secondary thread
 - critical rendering path - browser app load
 - caching - server
