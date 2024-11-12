@@ -19,7 +19,6 @@
 - Difference between setTimeout and setInterval
 - What are the different DOM API’s
 - DOM vs Virtual DOM
-- How Event loop works
 - What is event delegation
 - Difference between call, bind and apply
 - Explain Promise
@@ -29,7 +28,6 @@
 - What is variable hoisting
 - Difference between document.ready(){} and window.onload(){}
 - What is async, preload, prefetch in script
-- Callback vs Promise
 - Explain Currying
 - Questions related to flatten array
 - Call by value vs Call by reference
@@ -43,7 +41,7 @@
 - Arrays (e.g. [1, 2].reduce((sum, summand) => sum + summand, 0))
 - Prototypical Inheritance -> ES6 Class
 - Callbacks and Promises
-- Event Loop
+A callback function is called after a given task. It allows other code to be run in the meantime and prevents any blocking
 - Regular Expressions
 - Error handling (promise.then(...).catch(...), try { } catch(e) { })
 - JavaScript ES6 and beyond
@@ -59,7 +57,14 @@
 - shallow and deep copy
 - polyfills
 - recursive problems - flatten object
-- event loop - how heap works  -> event loop handles the recursion, not the call stack
+- How Event loop works - how heap works  -> event loop handles the recursion, not the call stack
+The Event Loop processes simple requests (non-blocking operations), such as I/O Polling, and returns the responses to the corresponding clients
+A single thread from the Thread Pool is assigned to a single complex request. This thread is responsible for completing a particular blocking request by accessing external resources, such as computation, database, file system, etc.
+
+Once the task is carried out completely, the response is sent to the Event Loop that sends that response back to the client.
+
+Event loops handle asynchronous callbacks in Node.js. It is the foundation of the non-blocking input/output in Node.js, making it one of the most important environmental features.
+
 - Call Stack, Memory Heap, Event Queue, and Event Loop
 - main thread and secondary thread
 - critical rendering path - browser app load
