@@ -69,7 +69,7 @@ Event loops handle asynchronous callbacks in Node.js. It is the foundation of th
 - main thread and secondary thread
 - critical rendering path - browser app load
 - caching - server
-- cors and proxy
+- proxy
 - temporal dead zone
 - global, local, lexical
 - hoisting
