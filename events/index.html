@@ -1,0 +1,102 @@
+ <div class="back"> <h2> Random number generator</h2> <span>Amount of numbers to be generated </span> <span>Output: </span> <input type="text" id="myInput" [(ngModel)]="noOutput" disabled> <div class="tooltip"> <button (click)="copyData()" (mouseout)="outFunc()"> <span class="tooltiptext" id="myTooltip">Copy to clipboard</span> Copy text </button> </div> </div>
+
+Enter your name:
+<input type="text" name="txtName" id="txtName" />
+<input type="button" id="btn" name="btn" value="Submit" ondblclick="CallFunction(this.id)" />
+
+
+Enter your name:
+<input type="text" name="txtName" id="txtName" />
+<input type="button" id="btn" name="btn" value="Submit" onmouseover="CallFunction1(this.id)" />
+
+
+Enter your name:
+<input type="text" name="txtName" id="txtName" onkeypress="CallFunction2(this.id)" />
+<input type="button" id="btn" name="btn" value="Submit" />
+<p>The text in the textbox is:
+<label id="lblText"></label>
+</p>
+
+
+<input (keyup)="onKey($event)">
+<p>{{values}}</p>
+
+<input #box (keyup)="0">
+<p>{{box.value}}</p>
+
+<input #box1 (keyup.enter)="onEnter(box1.value)">
+<p>{{value}}</p>
+
+<input #box2 (keyup.enter)="update(box2.value)" (blur)="update(box2.value)">
+<p>{{valueblur}}</p>
+
+<input #newHero (keyup.enter)="addHero(newHero.value)" (blur)="addHero(newHero.value); newHero.value='' ">
+
+Enter your name:
+<input type="text" name="txtName" id="txtName" onfocus="GotFocus(this.id)" />
+<input type="button" id="btn" name="btn" value="Submit" />
+
+Enter your name:
+<input type="text" name="txtName" id="txtName" onchange="CallFunction3(this.id)" />
+<input type="button" id="btn" name="btn" value="Submit" />
+<hr />
+TextBox value:
+<label id="lblText"></label>
+
+<body onload="CallFunction4()">
+Enter your name:
+<input type="text" name="txtName" id="txtName" />
+<input type="button" id="btn" name="btn" value="Submit" />
+</body>
+
+<body onunload="CallFunction5()">
+Enter your name: <input type="text" name="txtName" id="txtName" />
+<input type="button" id="btn" name="btn" value="Submit" />
+<a href="Add.htm">Go to Add page</a>
+</body>
+
+<h3>input event alternative of ngmodel</h3>
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+<p> {{ serverName }}</p>
+<div>
+<input [value]="name" (input)="name = $event.target.value"> {{name}}
+</div>
+
+<div class='col-xs-4 tweaked-margin'>
+<input #myInput placeholder="Search name..." (input)="filterItem(myInput.value)">
+<ul>
+<li *ngFor="let ab of abcd" class="text-left">{{ab}}</li>
+</ul>
+</div>
+
+<h1>Mouse Event on Input Range</h1>
+
+<input type="range" min=0 max=100 [(ngModel)]="rangeValue" (mousedown)="press()" (mouseup)="release()" />
+
+<p>Range Input Value : {{rangeValue}}</p>
+
+<p>Is Range Input Active : {{isActive}}</p>
+
+<button (click)="addHero(newHero.value)">Add</button>
+
+<ul>
+
+<li *ngFor="let hero of heroes">{{hero}}</li>
+
+</ul>
+
+
+<div id="mydiv">
+
+<div id="mydivheader">Click here to move Draggable element</div>
+
+<p>Move</p>
+
+<p>this</p>
+
+<p>DIV</p>
+
+</div>
+
+
+

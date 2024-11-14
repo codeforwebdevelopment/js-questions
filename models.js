@@ -1,5 +1,4 @@
 // Modelling a car:
-
 class Car {
    constructor(make, model, year) {
        this.make = make;
@@ -33,14 +32,9 @@ myCar.drive(); // Car is moving.
 myCar.lang = 'kjhk';
 console.log(myCar.lang);
 
-// Getter setter
+
 
 // Modeling a Bank Account:
-
-
-
-
-
 class BankAccount {
    constructor(name, balance) {
        this._name = name;
@@ -68,7 +62,6 @@ account.withdraw(200);
 account.checkBalance(); // Account balance: $1300
 
 // A Shopping Cart:
-
 class Item {
    constructor(name, price) {
        this.name = name;

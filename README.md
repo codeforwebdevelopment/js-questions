@@ -37,7 +37,7 @@
 - DOM Traversal, Manipulation & Creating Elements
 - core principles: (JS fundamentals)
 - Functions are first-class citizens in JavaScript
-- Objects (e.g. Object.keys(myObj).map(key => myMap[key]))
+- Objects
 - Arrays (e.g. [1, 2].reduce((sum, summand) => sum + summand, 0))
 - Prototypical Inheritance -> ES6 Class
 - Callbacks and Promises
@@ -87,3 +87,4 @@ Event loops handle asynchronous callbacks in Node.js. It is the foundation of th
 - Event Bubbling and Capturing
 - Static method
 - Method decorators
+- events - keydown, keyup , focus, blur, click "keydown", "textInput" , mouse(“mousewheel”, "mouseup", "click", "mousemove", "mouseout", " mousedown ", mouseenter, mouseleave), Touch ("touchstart", "touchmove", "touchend", "touchcancel"), control/form ()"reset", "scroll", "zoom", "blur", "select", "submit"), Document/Window Events(resize, scroll, DOMContentLoaded), unload, input

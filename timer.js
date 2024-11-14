@@ -26,7 +26,11 @@ function doAsyncTask(cb) {
   
   doAsyncTask(() => console.log("Callback Called"));
 
-
+  
+    
+    // o/p-
+    // Async Task Calling Callback
+    // Callback Called
   
 // What is logged?
 

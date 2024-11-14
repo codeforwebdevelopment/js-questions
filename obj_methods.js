@@ -30,6 +30,47 @@ console.log(entries);
 let keys = Object.keys(person);
 console.log(keys);
 // [ 'name', 'age' ]
+Object.keys(myObj).map(key => myMap[key])
+
+let evilResponse = {
+    "car":
+    {
+    "color": "red",
+    "model": "2013"
+    },
+    "motorcycle":
+    {
+    "color": "red",
+    "model": "2016"
+    },
+    
+    "bicycle":
+    {
+    
+    "color": "red",
+    
+    "model": "2011"
+    }
+    }
+    let evilResponseProps = Object.keys(evilResponse);
+    
+    let goodResponse = [];
+    // Iterate throw all keys.
+    for (let prop of evilResponseProps) {
+    
+    goodResponse.push(prop);
+    }
+    
+    // convert string to array
+// ...valueEntered - spread operator
+Object.assign([], valueEntered),
+Array.from(valueEntered) // to turn a string into an array
+string.split('');
+
+    console.log(Array.from(Array(6).keys())); // [ 0, 1, 2, 3, 4, 5 ]
+    
+    console.log(...Array(8).keys()); // 0 1 2 3 4 5 6 7
+    
 let values = Object.values(person);
 console.log(values);
 // [ 'Roger', 30 ]

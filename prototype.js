@@ -203,3 +203,18 @@ console.log(object1.prototype.isPrototypeOf(object3));
 // expected output: true
 console.log(object2.prototype.isPrototypeOf(object3));
 // expected output: true
+
+// instance vs prototype methods-
+function Dog (breed) {
+  this.breed = breed;
+  this.sayHello = function(){
+      console.log("Hello this is a "+ this.breed + "dog");    
+  }
+}
+  function Dog (breed) {
+    this.breed = breed; 
+    }
+    Dog.prototype.sayHello = function(){
+        console.log("Hello this is a "+ this.breed + " dog");
+    };
+    

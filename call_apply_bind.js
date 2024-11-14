@@ -115,7 +115,7 @@ newBound(); // logs : sam is 22 years old
 // console.log(str)
 //  }
 // F();
-
+// when you call this function it will show an error. To call the function you have to invoke this function in different contexts. Corrected Code:
 // [base class].call([child class],[arguments for base class constructor]);
 
 function F() {
@@ -130,6 +130,8 @@ let obj = {
 
 F.call(obj); // good
 
+
+// Here we create a function then we create an object in which we are declaring that function. with the call built-in method, we can run this function.
 // example
 function Person(name, age) {
   this.name = name || '';
