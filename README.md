@@ -8,7 +8,6 @@
 - Difference between const, let and var.
 - what isNaN function does?
 - Scope in JavaScript function
-- Hoisting in js
 - Ecma6 feat
 - What is context in JS?
 - Difference between map, reduce and filter
@@ -25,7 +24,6 @@
 - Throttling vs Debouncing
 - What is Closure and why should we use closure
 - What are the different internal storage and its differences
-- What is variable hoisting
 - Difference between document.ready(){} and window.onload(){}
 - What is async, preload, prefetch in script
 - Explain Currying
@@ -38,14 +36,13 @@
 - core principles: (JS fundamentals)
 - Functions are first-class citizens in JavaScript
 - Objects
-- Arrays (e.g. [1, 2].reduce((sum, summand) => sum + summand, 0))
 - Prototypical Inheritance -> ES6 Class
 - Callbacks and Promises
 A callback function is called after a given task. It allows other code to be run in the meantime and prevents any blocking
 - Regular Expressions
 - Error handling (promise.then(...).catch(...), try { } catch(e) { })
 - JavaScript ES6 and beyond
-- Hoisting, Memoization
+- variable hoisting, Hoisting, Memoization
 - Declarative vs imperative programming
 - Functional vs object-oriented programming
 - Inheritance vs composition  
@@ -72,7 +69,6 @@ Event loops handle asynchronous callbacks in Node.js. It is the foundation of th
 - proxy
 - temporal dead zone
 - global, local, lexical
-- hoisting
 - v8 and libuv
 - IIFEs
 - this keyword

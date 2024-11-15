@@ -133,4 +133,3 @@ function ajaxCall() {
   };
   constantMock2();
 }
-
