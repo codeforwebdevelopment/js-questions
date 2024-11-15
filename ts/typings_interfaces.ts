@@ -277,3 +277,13 @@ function calculatePorice(value: unknown) {
     value();
   }
 }
+
+// All types expressible as interfaces
+
+interface Node {
+// children: Node[]; // property
+// numChildren(): number; // method
+(x: string): string; // callable
+new (label: string): Node; // newable
+[key: string]: boolean; // index signature
+}
