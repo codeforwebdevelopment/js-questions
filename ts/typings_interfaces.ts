@@ -287,3 +287,16 @@ interface Node {
 new (label: string): Node; // newable
 [key: string]: boolean; // index signature
 }
+
+export interface UpdateAccount {
+  name: string;
+  surname: string;
+  currentPassword: string;
+  newPassword: string;
+  confirmNewPassword: string;
+  defaultAmount: number;
+}
+
+export type UpdateAccountForm = {
+  [key in keyof UpdateAccount]: FormControl<string>;
+};
