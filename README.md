@@ -42,7 +42,8 @@ A callback function is called after a given task. It allows other code to be run
 - Regular Expressions
 - Error handling (promise.then(...).catch(...), try { } catch(e) { })
 - JavaScript ES6 and beyond
-- variable hoisting, Hoisting, Memoization
+- variable hoisting, Hoisting
+- Memoization
 - Declarative vs imperative programming
 - Functional vs object-oriented programming
 - Inheritance vs composition  
