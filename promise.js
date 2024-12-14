@@ -1,3 +1,8 @@
+// A Promise has four states: 
+// fulfilled: Action related to the promise succeeded
+// rejected: Action related to the promise failed
+// pending: Promise is still pending i.e. not fulfilled or rejected yet
+// settled: Promise has fulfilled or rejected
 
 // create function sum with promises if the values are string then reject otherwise resolve it
 function sumValidate(a, b) {
