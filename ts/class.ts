@@ -116,7 +116,33 @@ class QuoteModel {
     }
   }
   
-  // Abstraction
+  // abstraction-
+// representing important information or features to user and hiding complex information is abstraction.
+// Abstraction vs encapsulation
+//  Abstraction and Encapsulation
+// The following relationship exists between abstraction and encapsulation.
+// ⚫ They complement each other.
+// • Encapsulation assists abstraction by providing a means of suppressing the non essential details.
+// How the car is moving and how the engine is working this information is hidden (Encapsulation)
+// The main thing is how to drive
+// a car...
+
+// ⚫ Abstraction denotes the essential characteristics of an object.
+// • Encapsulation is the process of hiding all the details of an object that do not contribute to its
+// essential characteristics.
+// ⚫a class has a method that has various implementations and can perform different actions, it is termed as polymorphism in object-oriented programming.
+
+
+// Abstract classes
+// The abstract keyword is used to create abstract classes.
+// An abstract class is incomplete and hence cannot be instantiated.
+// An abstract class can only be used as base class.
+// An abstract class cannot be sealed.
+// An abstract class may contain abstract members(methods, properties, indexers, and events), but not mandatory.
+// A non-abstract class derived from an abstract class must provide implementations for all inherited abstract members.
+// If a class inherits an abstract class, there are 2 options available for that class
+// Option 1: Provide Implementation for all the abstract members inherited from the base abstract class.
+// Option 2: If the class does not wish to provide Implementation for all the abstract members inherited from the abstract class, then the class has to be marked as abstract.
   
   abstract class Company {
     name: string;

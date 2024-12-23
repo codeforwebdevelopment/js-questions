@@ -1,4 +1,35 @@
 
+// Inheritance -
+// it is the process by which one object acquires state and behavious of another object.
+// Inheritance allows us to define a class in terms of another class, which makes it easier to create and maintain an application. 
+// This also provides an opportunity to reuse the code functionality and speeds up implementation time.
+// The idea of inheritance implements the IS-A relationship. For example, mammal IS A animal, dog IS-A mammal hence dog IS-A animal as well, and so on.
+// It allows code reuse.
+// Types-
+// 1-single
+// 2-hierrarichal
+// 3-multilevel
+// 4-multiple(using interface)
+// 1-class A
+// class B:A
+
+// 2-class A
+// class B:A
+// class C:A
+// class D:A
+
+// 3-class A
+// class B:A
+// class C:B
+
+// 4-interface A
+// interface B
+// interface C:A,B
+
+// Terminology-
+// Base class 
+// Derived class
+
 // has-a relationship - composition
 class Pushable {
     sendPushMessage() {
