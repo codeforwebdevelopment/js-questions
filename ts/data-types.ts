@@ -39,7 +39,7 @@ console.log(typeof undefined); //undefined
 // null is the object in JS. A value that is explicitly defined by the keyword "null" is known as a null value. Special primitive type.   
 
 
-String initializePrice=null;
+// String initializePrice=null;
 
 var bar = null;
 
@@ -49,7 +49,7 @@ console.log( typeof null ); //object
 
 console.log(typeof undefined == typeof null);  // false
 
-console.log(typeof undefined == typeof NULL);  // true (The expression will be evaluated to true, since NULL will be treated as any other undefined variable.)
+// console.log(typeof undefined == typeof NULL);  // true (The expression will be evaluated to true, since NULL will be treated as any other undefined variable.)
 
 // Note: JavaScript is case-sensitive and here we are using NULL instead of null.
 
@@ -87,7 +87,7 @@ type MyArrayType = Array<{ id: number, text: string }>;
 
 // Inside class  
 
-arr1: MyArrayType = [
+let arr1: MyArrayType = [
 
   { id: 1, text: 'Sentence 1' },
 
@@ -137,10 +137,29 @@ console.log( Number(true) );        // 1
 
 console.log( Number(false) );       // 0
 
-null + 1 = 1 
+// null + 1 = 1 
 
-undefined + 1 = NaN 
+// undefined + 1 = NaN 
 
 console.log(typeof NaN === "number");  // logs "true"
 
-console.log(NaN === NaN);  // logs "false"
+// console.log(NaN === NaN);  // logs "false"
+
+// 2: greater and smaller than (< >) Operator-
+
+// You can also cast out variables by using the < > operator. This has the same effect on our code but implements a simpler syntax.
+
+let str: any = "This is a String"
+
+let strLength = (<string>str).length
+
+
+// 10- as Keyword in Typescript-
+
+// Use this keyword after the name of the variable and end it with the desired data type.
+
+// Example-
+
+let str1: any = "This is a String"
+
+let length1 = (str1 as string).length

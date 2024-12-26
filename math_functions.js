@@ -36,7 +36,7 @@ const a = (function() {
     // string
     console.log(a, typeof a, 'a');
     
-        parseint with radix(octal..)
+    //     parseint with radix(octal..)
     console.log(0b001) // 1
     console.log(0b010) // 2
     console.log(0b011) // 3

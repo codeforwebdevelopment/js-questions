@@ -1,7 +1,7 @@
 const start = performance.now();
 myFunction();
 const end = performance.now();
-console.log(Time taken: ${end - start} milliseconds);
+console.log(`Time taken: ${end - start} milliseconds`);
 
 function print() {
 var a = 2000;
@@ -15,11 +15,7 @@ console.log(a); // 2000
 console.log(b); //undefined
 console.log(c);// undefined
 
-let a = [1,2,3,4];
-const b = a;
-b[1] = 200;
-console.log(a); // [1,200,3,4];
-console.log(b); // [1,200,3,4];
+
 
 function print() {
 console.log(this); // print() {}
@@ -38,11 +34,12 @@ console.log(i)
 }, i * 1000)
 }
 
+
 let a = [1,2,3,4];
 const b = a;
 b[1] = 200;
-console.log(a);
-console.log(b);
+console.log(a); // [1,200,3,4];
+console.log(b); // [1,200,3,4];
 
 function foo(item) {
 
@@ -63,32 +60,23 @@ Arr=[2, 5,6,7,2,5,9]
 
 Str='geeks for geek'
 
-keeg rof.. //output
+// keeg rof.. //output
 
-{g:2, e:4, k:2,..}
+// {g:2, e:4, k:2,..}
 
-<p id="test" class="test1" style="font-size:10px"> hello</p>
 
-.test1{
-font-size:30px;
-}
-
-#test{
-font-size:20px;
-}
 
 
 var Y = 1;
 if (function F(){})
 {
-y += Typeof F;
+y += typeof F;
 }
-console.log(y);
-1undefined
+console.log(y); // 1undefined
 
 var Output = (function(x)
 {
-Delete X;
+delete X;
 return X;
 }
 )(0);
@@ -108,14 +96,15 @@ var Employee =
 company: 'xyz'
 }
 var Emp1 = Object.create(employee);
-delete Emp1.company Console.log(emp1.company); //xyz
+delete Emp1.company 
+console.log(emp1.company); //xyz
 
-var Foo = Function Bar()
+var Foo = function Bar()
 {
 return 7;
 };
 typeof Bar();
-The output would be Reference Error. A function definition can have only one reference variable as its function name.
+// The output would be Reference Error. A function definition can have only one reference variable as its function name.
 
 const shape = {
     radius: 10,
@@ -127,7 +116,7 @@ const shape = {
     
     console.log(shape.diameter()); // 20
     console.log(shape.perimeter()); // error
-    e.g
+    // e.g
     class Chameleon {
     static colorChange(newColor) {
     this.newColor = newColor;
@@ -137,12 +126,13 @@ const shape = {
     constructor({ newColor = 'green' } = {}) {
     this.newColor = newColor;
     }
-    }++
+    }
+    // ++
     
     const freddie = new Chameleon({ newColor: 'purple' });
     console.log(freddie.colorChange('orange')); // error
     
-    e.g
+    // e.g
     let greeting;
     greeting = {};
     console.log(greeting); // {}
@@ -207,10 +197,10 @@ return
 
 console.log(foo(5));
 
-Function scope in js
-How to run this code-
+// Function scope in js
+// How to run this code-
 
-todoStore(isAuthenticated) {
+function todoStore(isAuthenticated) {
 
     let todos = [];
     function add(todo) {
@@ -230,6 +220,6 @@ todoStore(isAuthenticated) {
 
   }
 
-Solution-
+// Solution-
   var callStore = this.todoStore(true);
 callStore.add('demo');
