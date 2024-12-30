@@ -33,12 +33,12 @@ let studentList = [
     }
     });
     
-    or you can use this
-    const ordered = inventors.sort((a, b) => a.year > b.year ? 1 : -1);
+    // or you can use this
+    const ordered1 = inventors.sort((a, b) => a.year > b.year ? 1 : -1);
     
-    console.log(ordered); // Galileo, Johannes, Isaac, Marie, Albert
+    console.log(ordered1); // Galileo, Johannes, Isaac, Marie, Albert
 
-    Sort the inventors by years lived
+    // Sort the inventors by years lived
     const oldest = inventors.sort(function(a, b) {
         const lastInventor = a.passed - a.year;
         const nextInventor = b.passed - b.year;
@@ -47,7 +47,7 @@ let studentList = [
         
         console.log(oldest); // Isaac, Galileo, Albert, Marie, Johannes
 
-        Sort the people alphabetically
+        // Sort the people alphabetically
         const people = ['red', 'green', 'blue'];
 const data = people.sort((lastOne, nextOne) => {
 const [aLast, aFirst] = lastOne.split(',');
@@ -55,8 +55,8 @@ const [bLast, bFirst] = nextOne.split(',');
 return aLast > bLast ? 1 : -1;
 });
 console.log(data); // ["blue", "green", "red"]
-In the sort method, if it contains mixed variables like string, number both then it also gives you a sorted array and unrelated thing in the end. 
+// In the sort method, if it contains mixed variables like string, number both then it also gives you a sorted array and unrelated thing in the end. 
 let values = new Array(6,3,'xyz').sort();
 console.log(values); [3, 6, "xyz"]
-let values = new Array(6,x,3,'xyz').sort();
-console.log(values); [3, 6, "xyz", 'x']
+let values1 = new Array(6,x,3,'xyz').sort();
+console.log(values1); [3, 6, "xyz", 'x']

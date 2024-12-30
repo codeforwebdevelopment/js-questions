@@ -55,10 +55,10 @@ console.log(oldNames); //["Albert", "Marie"]
         { id: 2, name: 'black_widow', env: 'marvel' },
         { id: 3, name: 'wonder_woman', env: 'dc_comics' },
       ];
-      let arr = characters
+      let arr1 = characters
            .filter(character => character.env === 'marvel')
            .map(character => Object.assign({}, character, { alsoSeenIn: ['Avengers'] }))
-      console.log(arr);
+      console.log(arr1);
       // [
       //   { name: 'ironman', env: 'marvel', alsoSeenIn: ['Avengers'] },
       //   { name: 'black_widow', env: 'marvel', alsoSeenIn: ['Avengers'] }

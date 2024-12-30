@@ -10,15 +10,14 @@ const comments = [
 const index = comments.findIndex(comment => comment.id === 823423);
 console.log(comments[index].text );
 
-Example-
 
 var numbers = [1, 2, 3];
 var oddNumber = numbers.findIndex((x) => x % 2 == 1);
 console.log(oddNumber); //0
 
-in operator-
+// in operator-
 
-The in operator returns true if the specified property is in the specified object.
+// The in operator returns true if the specified property is in the specified object.
 
 const car = { make: 'Honda', model: 'Accord', year: 1998 };
 
@@ -34,8 +33,8 @@ let fruits = ['apple', 'banana', 'cherry']
 
 let d = 'apple';
 
-const index = fruits.findIndex(fruit => fruit === d);
+const index1 = fruits.findIndex(fruit => fruit === d);
 
-if (index in fruits){
+if (index1 in fruits){
 console.log('scd')
 }

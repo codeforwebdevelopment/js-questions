@@ -26,9 +26,9 @@ function copySorted(arr) {
     console.log( sorted ); // ["CSS", "HTML", "JavaScript"]
     console.log( arr ); // ["HTML", "JavaScript", "CSS"]
 
-    you can also copy the array with this approach
-arr.foreach{
+    // you can also copy the array with this approach
+// arr.foreach{
 
-   arr2.push(element)
+//    arr2.push(element)
 
-}
+// };

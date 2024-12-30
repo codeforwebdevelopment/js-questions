@@ -4,11 +4,11 @@ let a = [1, 2, 3, 4, 5, 6];
      if (a[i] % 2 === 0) even1.push(a[i]);
    }
 
-   let a = [1, 2, 3, 4, 5, 6];
-   let even = a.filter(val => {
+   let a1 = [1, 2, 3, 4, 5, 6];
+   let even = a1.filter(val => {
      return val % 2 === 0;
    });
- var evenNumber = a.filter((x) => x % 2 == 0);    
+ var evenNumber = a1.filter((x) => x % 2 == 0);    
 console.log(evenNumber); //[2, 4, 6]
 
 
@@ -19,7 +19,7 @@ const inventors = [
     { first: 'Marie', last: 'Curie', year: 1867, passed: 1934 },
     { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
   ];
-Filter the list of inventors for those who were born in between 1500 to 1600s.
+// Filter the list of inventors for those who were born in between 1500 to 1600s.
 const fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600));
 console.log(fifteen); // // Galileo, Johannes objects
 
