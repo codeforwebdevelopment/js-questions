@@ -1,3 +1,43 @@
+
+// map method in array
+const array = [2, 5, 9];
+let squares = array.map((num) => num*num);
+console.log(squares); // [4, 25, 81] 
+console.log(array); // [2, 5, 9]
+
+
+// The map will take every return value from the callback and create a new array with them. This method creates a new array with the results of calling a provided function on every element in the calling array.  This array method comes in Functional or declarative programming. With this, you can also improve your classic imperative code with declarative code which makes code more readable.  it makes code shorter. 
+
+// Array.prototype.map()
+
+// It basically used to transform an array.
+// let result = arr.map(function(item, index, array) {  // returns the new value instead of item});
+// Imperative programming
+
+    const doubleMap3 = numbers => {
+      const doubled = [];
+      for (let i = 0; i < numbers.length; i++) {
+        doubled.push(numbers[i] * 2);
+      }
+      return doubled;
+    };
+    console.log(doubleMap3([2, 3, 4])); // [4, 6, 8]
+
+// Functional programming
+
+    const doubleMap4 = numbers => numbers.map(n => n * 2);
+    console.log(doubleMap4([2, 3, 4])); // [4, 6, 8]
+
+// create a list of Boulevards in Paris that contain 'de' anywhere in the name.
+
+// https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+
+  const category = document.querySelector('.mw-category');
+  const links = Array.from(category.querySelectorAll('a'));
+  const de = links
+              .map(link => link.textContent)
+              .filter(streetName => streetName.includes('de'));
+
 const inventors = [
     { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955, points: 2, type: 'a'   },
     { first: 'Isaac', last: 'Newton', year: 1643, passed: 1727, points: 3, type: 'b'  },

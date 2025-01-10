@@ -1,3 +1,7 @@
+
+// used to sorts the elements of an array and returns the sorted array.
+
+// Array.prototype.sort()
 // Sorted based on weight.
 
 let studentList = [
@@ -60,3 +64,15 @@ let values = new Array(6,3,'xyz').sort();
 console.log(values); [3, 6, "xyz"]
 let values1 = new Array(6,x,3,'xyz').sort();
 console.log(values1); [3, 6, "xyz", 'x']
+
+
+
+var customers = [{name:"Jack", age:25}, {name:"Mary", age:37}, {name:"Peter", age:18}, {name:"Amos", age: 23}, {name:"Craig", age: 45}];
+
+customers.sort(function(cust1, cust2){
+var name1 = ust1.name.toLowerCase(); 
+var name2 = ust2.name.toLowerCase(); 
+if (name1 < name2){ return -1;} 
+if (name1 > name2){ return 1;} 
+return 0;
+});

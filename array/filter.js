@@ -1,3 +1,19 @@
+// used to creates an array filled with all array elements that pass a test.
+
+// Array.prototype.filter()
+
+// In the filter method, we pass the callback as a parameter-
+
+// .filter(callback)- the callback function takes three arguments:
+
+// element—the current element of the array,
+
+// index- the current index of the value being processed,
+
+// array- the original array
+
+// With filter-
+
 let a = [1, 2, 3, 4, 5, 6];
    let even1 = [];
    for (var i = 0; i < a.length; i++) {
