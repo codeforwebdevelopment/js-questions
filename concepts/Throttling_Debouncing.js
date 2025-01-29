@@ -1,5 +1,3 @@
-Example-
-
 const debounce = (func, delay) => {
 
 let inDebounce
@@ -23,9 +21,9 @@ console.info('Hey! It is', new Date().toUTCString());
 
 }, 3000));
 
-inDebounce is a variable that we use to track the delay period.
+// inDebounce is a variable that we use to track the delay period.
 
-In this example, we are debouncing the call by 3 seconds at which point we print the date.
+// In this example, we are debouncing the call by 3 seconds at which point we print the date.
 
 const throttle = (func, limit) => {
 
