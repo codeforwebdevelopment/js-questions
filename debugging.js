@@ -11,7 +11,7 @@ fetch('https://api.github.com/users/wesbos')
 .then(data=>data.json())
 .then(data=>{
 console.timeEnd('fetching data');
-console.log(data);
+// console.log(data);
 });
 
 const dogs = [{ name: 'rocky', age: 2 }, { name: 'rocco', age: 8 }]; // Here dogs is a array of object.
@@ -24,15 +24,33 @@ dogs.forEach(dog => {
 });
 
 function foo() {
+  console.log('foo')
   function bar() {
    console.trace();
+   console.log('bar');
   }
   bar();
   }
+  foo()
   // o/p-
   // bar
   // foo
 
+  function a() {
+    b();
+  }
+  
+  function b() {
+    c();
+  }
+  
+  function c() {
+    console.trace(); // Will print the stack trace
+  }
+  
+  a();
+
+  
   var myCircle3 = {
     radius: 1.1,
     getArea: function () { return this.radius * this.radius * Math.PI; }
