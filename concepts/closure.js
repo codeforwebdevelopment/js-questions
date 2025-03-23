@@ -1,3 +1,11 @@
+// Closures are powerful in JavaScript and TypeScript for a variety of use cases, including:
+
+// Data privacy
+// Managing async operations
+// Event handling
+// Form validation
+// Currying
+
 // Creating closures in loops: A common mistake
 
 for (var i = 0; i < 5; i++) {
@@ -138,6 +146,8 @@ var counter = function () {
     });
 };
 
+// Data Privacy with Closures
+// Closures are commonly used to create private variables in JavaScript
 var SafeCount = function () {
   var count = 0;
   return {
@@ -163,6 +173,7 @@ myCount.increment();
 myCount.increment();
 myCount.count = 53;
 console.log(myCount.count); // 53
+counter.decrement();  
 
 //    example
 var header = 'Global Header';
@@ -271,3 +282,23 @@ function inner () {
     b = 3; // b is 3
     console.log(b); // output "3"
 }
+
+
+// Form Validation with Closures
+// Another common use case for closures is in form validation. You can create functions that validate different form fields, where each function "remembers" its own logic
+function createValidator(minLength) {
+  return function(input) {
+    if (input.length >= minLength) {
+      console.log('Valid input!');
+    } else {
+      console.log(`Input must be at least ${minLength} characters.`);
+    }
+  };
+}
+
+const validateUsername = createValidator(5);
+const validatePassword = createValidator(8);
+
+validateUsername('John'); // "Valid input!"
+validatePassword('password123'); // "Valid input!"
+validatePassword('short'); // "Input must be at least 8 characters."
