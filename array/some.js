@@ -1,4 +1,6 @@
+// The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value.
 
+// Array.prototype.some()
   const people = [
       { name: 'Wes', year: 1988 },
       { name: 'Kait', year: 1986 },

@@ -1,4 +1,6 @@
+// every is used when you want to derive a single boolean value from the whole array after matching the condition. This method is available in the array prototype. 
 
+// Array.prototype.every()
   const people = [
       { name: 'Wes', year: 1988 },
       { name: 'Kait', year: 1986 },
